@@ -29,33 +29,13 @@ namespace BuscarLibros
                 Console.Clear();
                 Console.WriteLine("°°°Biblioteca Estudiantil°°°");
                 Console.WriteLine("1. Buscar por titulo (Lineal)");
-                Console.WriteLine("2. Buscar por autor (Binaria)");
-                Console.WriteLine("3. Ver libro mas reciente y mas antiguo");
-                Console.WriteLine("4.Buscar coincidencia entre descripciones ");
-                Console.WriteLine("5. Ver catalogo completo");
-                Console.WriteLine("0. Salir");
-                Console.Write("\n Seleccione una opcion: ");
+                
 
 
                 switch (Console.ReadLine())
                 {
                     case "1":
                         BusquedaLinealTitulo(biblioteca);
-                        break;
-                    case "2":
-                        BusquedaBinariaAutor(biblioteca);
-                        break;
-                    case "3":
-                        BuscarExtremos(biblioteca);
-                        break;
-                    case "4":
-                        BusquedaEnDescripcion(biblioteca);
-                        break;
-                    case "5":
-                        ImprimirLista(biblioteca);
-                        break;
-                    case "0":
-                        next = false;
                         break;
                     default:
                         Console.WriteLine("Opcion no valida. Presione una tecla para continuar...");
@@ -92,95 +72,7 @@ namespace BuscarLibros
                 }
             }
         }
-        static void BusquedaBinariaAutor(List<Libro> libros)
-        {
-            List<Libro> librosOrdenados = libros.OrderBy(l => l.Autor).ToList();
-
-            Console.Write("\n Ingrese el autor del libro a buscar: ");
-            Console.WriteLine("Ingrese el nombre del libro");
-            string objetivo = Console.ReadLine();
-            int izquierda = 0;
-            int derecha = librosOrdenados.Count - 1;
-            bool encontrado = false;
-
-            while (izquierda <= derecha)
-            {
-                int medio = (izquierda + derecha) / 2;
-                int comparacion = string.Compare(librosOrdenados[medio].Autor, objetivo, StringComparison.OrdinalIgnoreCase);
-                if (comparacion == 0)
-                {
-                    Console.WriteLine("\n Libro encontrado:");
-                    Console.WriteLine(librosOrdenados[medio]);
-                    encontrado = true;
-                    break;
-                }
-                else if (comparacion < 0)
-                {
-                    izquierda = medio + 1;
-                }
-                else
-                {
-                    derecha = medio - 1;
-                }
-            }
-            if (!encontrado)
-            {
-                Console.WriteLine("\n Libro no encontrado.");
-            }
-
-
-        }
-        static void BuscarExtremos(List<Libro> libros)
-        {
-            if (libros.Count == 0) return;
-            Libro masReciente = libros[0];
-            Libro masAntiguo = libros[0];
-
-            foreach (var libro in libros)
-            {
-                if (libro.AnioPublicacion > masReciente.AnioPublicacion)
-                {
-                    masReciente = libro;
-                }
-                if (libro.AnioPublicacion < masAntiguo.AnioPublicacion)
-                {
-                    masAntiguo = libro;
-                }
-                Console.WriteLine("\n -- Analisis Temporal --");
-                Console.WriteLine($"Libro mas reciente: {masReciente}");
-                Console.WriteLine($"Libro mas antiguo: {masAntiguo}");
-
-            }
-
-        }
-        static void BusquedaEnDescripcion(List<Libro> libros)
-        {
-            Console.Write("\nIngrese término a buscar en descripciones (ej. 'programación'): ");
-            string termino = Console.ReadLine();
-            int contador = 0;
-
-            foreach (var libro in libros)
-            {
-                // Búsqueda manual de subcadena (simulada con IndexOf para simplicidad)
-                if (libro.Descripcion.IndexOf(termino, StringComparison.OrdinalIgnoreCase) >= 0)
-                {
-                    Console.WriteLine($"- Coincidencia en '{libro.Titulo}': {libro.Descripcion}");
-                    contador++;
-                }
-            }
-
-            if (contador == 0) Console.WriteLine("No hubo coincidencias.");
-
-        }
-        static void ImprimirLista(List<Libro> libros)
-        {
-            Console.WriteLine("\n -- Catalogo Completo --");
-            foreach (var libro in libros)
-            {
-                Console.WriteLine(libro);
-            }
-
-        }
+        
         static List<Libro> IniciarDatos()
         {
             return new List<Libro>
