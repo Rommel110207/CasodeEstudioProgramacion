@@ -1,0 +1,15 @@
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\bin\Debug\net8.0\BuscarLibros.exe
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\bin\Debug\net8.0\BuscarLibros.deps.json
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\bin\Debug\net8.0\BuscarLibros.runtimeconfig.json
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\bin\Debug\net8.0\BuscarLibros.dll
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\bin\Debug\net8.0\BuscarLibros.pdb
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\obj\Debug\net8.0\BuscarLibros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\obj\Debug\net8.0\BuscarLibros.AssemblyInfoInputs.cache
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\obj\Debug\net8.0\BuscarLibros.AssemblyInfo.cs
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\obj\Debug\net8.0\BuscarLibros.csproj.CoreCompileInputs.cache
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\obj\Debug\net8.0\BuscarLibros.sourcelink.json
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\obj\Debug\net8.0\BuscarLibros.dll
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\obj\Debug\net8.0\refint\BuscarLibros.dll
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\obj\Debug\net8.0\BuscarLibros.pdb
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\obj\Debug\net8.0\BuscarLibros.genruntimeconfig.cache
+C:\Users\romme\OneDrive\Desktop\PruebaII\BuscarLibros\BuscarLibros\obj\Debug\net8.0\ref\BuscarLibros.dll
